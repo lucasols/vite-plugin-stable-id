@@ -1,5 +1,6 @@
 {
   "scripts": {
-    "test": "pnpm -filter vite-plugin-stable-id run test"
+    "test": "pnpm -filter vite-plugin-stable-id run test",
+    "start-app-test": "pnpm -filter test-app run dev"
   }
 }

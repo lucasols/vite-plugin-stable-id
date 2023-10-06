@@ -7,6 +7,11 @@
       "label": "Start test UI",
       "type": "npm",
       "script": "test"
+    },
+    {
+      "label": "Start app test",
+      "type": "npm",
+      "script": "start-app-test"
     }
   ]
 }

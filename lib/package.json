@@ -34,18 +34,21 @@
     "node": ">=20.0.0"
   },
   "devDependencies": {
+    "@lucasols/eslint-plugin-extended-lint": "^1.4.0",
     "@types/node": "^20.8.2",
     "@typescript-eslint/eslint-plugin": "^6.7.4",
     "@typescript-eslint/parser": "^6.7.4",
-    "@lucasols/eslint-plugin-extended-lint": "^1.4.0",
     "@vitest/ui": "^0.34.6",
     "eslint": "^8.50.0",
     "eslint-plugin-vitest": "^0.3.2",
+    "prettier": "^3.0.3",
     "tsm": "^2.3.0",
     "tsup": "^7.2.0",
-    "prettier": "^3.0.3",
     "typescript": "^5.2.2",
     "vite": "^4.4.11",
     "vitest": "^0.34.6"
+  },
+  "dependencies": {
+    "magic-string": "^0.30.4"
   }
 }
