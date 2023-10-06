@@ -12,6 +12,25 @@
       "label": "Start app test",
       "type": "npm",
       "script": "start-app-test"
+    },
+    {
+      "label": "bump version and deploy",
+      "type": "shell",
+      "command": "cd lib && pnpm pre-publish && pnpm version ${input:version} && pnpm publish",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "fileName",
+      "type": "promptString",
+      "description": "Enter the file name"
+    },
+    {
+      "id": "version",
+      "type": "pickString",
+      "description": "Select version type",
+      "options": ["minor", "patch", "major"]
     }
   ]
 }

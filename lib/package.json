@@ -15,7 +15,8 @@
     "pre-publish": "./scripts/check-if-is-sync.sh && pnpm build"
   },
   "files": [
-    "dist"
+    "dist",
+    "virtualTypes.d.ts"
   ],
   "repository": "github:lucasols/vite-plugin-stable-id",
   "author": "Lucas Santos",
@@ -27,6 +28,9 @@
     ".": {
       "import": "./dist/main.js",
       "require": "./dist/main.cjs"
+    },
+    "./virtualTypes": {
+      "types": "./virtualTypes.d.ts"
     }
   },
   "sideEffects": false,
