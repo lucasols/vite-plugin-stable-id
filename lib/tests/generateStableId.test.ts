@@ -7,10 +7,10 @@ test('single usage', () => {
     replaceStableIdCalls(`console.log(stableId())`, 'test.ts', true),
   ).toMatchInlineSnapshot(`
     {
-      "code": "console.log('196xm6g1')",
+      "code": "console.log('s196xm6g1')",
       "map": SourceMap {
         "file": undefined,
-        "mappings": "AAAA,YAAY,UAAU",
+        "mappings": "AAAA,YAAY,WAAU",
         "names": [],
         "sources": [
           "",
@@ -36,13 +36,13 @@ test('multiple usages', () => {
     ),
   ).toMatchInlineSnapshot(`
     {
-      "code": "console.log('196xm6g1');
-    console.log('196xm6g2');
-    console.log('196xm6g3');
-    console.log('196xm6g4');",
+      "code": "console.log('s196xm6g1');
+    console.log('s196xm6g2');
+    console.log('s196xm6g3');
+    console.log('s196xm6g4');",
       "map": SourceMap {
         "file": undefined,
-        "mappings": "AAAA,YAAY,UAAU;AACtB,YAAY,UAAU;AACtB,YAAY,UAAU;AACtB,YAAY,UAAU",
+        "mappings": "AAAA,YAAY,WAAU;AACtB,YAAY,WAAU;AACtB,YAAY,WAAU;AACtB,YAAY,WAAU",
         "names": [],
         "sources": [
           "",
@@ -65,10 +65,10 @@ test('with labels', () => {
     ),
   ).toMatchInlineSnapshot(`
     {
-      "code": "console.log('1f7yvv91-test');",
+      "code": "console.log('s1f7yvv91-test');",
       "map": SourceMap {
         "file": undefined,
-        "mappings": "AAAA,YAAY,eAAgB",
+        "mappings": "AAAA,YAAY,gBAAgB",
         "names": [],
         "sources": [
           "",
@@ -89,10 +89,10 @@ test('with labels', () => {
     ),
   ).toMatchInlineSnapshot(`
     {
-      "code": "console.log('1f7yvv91-test');",
+      "code": "console.log('s1f7yvv91-test');",
       "map": SourceMap {
         "file": undefined,
-        "mappings": "AAAA,YAAY,eAAgB",
+        "mappings": "AAAA,YAAY,gBAAgB",
         "names": [],
         "sources": [
           "",
@@ -117,14 +117,14 @@ test('with labels', () => {
     ),
   ).toMatchInlineSnapshot(`
     {
-      "code": "console.log('1f7yvv91-test_ok');
-    console.log('1f7yvv92-test-ok');
-    console.log('1f7yvv93-test2');
-    console.log('1f7yvv94-test3');
-    console.log('1f7yvv95-PascalCase');",
+      "code": "console.log('s1f7yvv91-test_ok');
+    console.log('s1f7yvv92-test-ok');
+    console.log('s1f7yvv93-test2');
+    console.log('s1f7yvv94-test3');
+    console.log('s1f7yvv95-PascalCase');",
       "map": SourceMap {
         "file": undefined,
-        "mappings": "AAAA,YAAY,kBAAmB;AAC/B,YAAY,kBAAmB;AAC/B,YAAY,gBAAiB;AAC7B,YAAY,gBAAiB;AAC7B,YAAY,qBAAsB",
+        "mappings": "AAAA,YAAY,mBAAmB;AAC/B,YAAY,mBAAmB;AAC/B,YAAY,iBAAiB;AAC7B,YAAY,iBAAiB;AAC7B,YAAY,sBAAsB",
         "names": [],
         "sources": [
           "",
@@ -174,11 +174,11 @@ test('duplicate labels should produce different ids', () => {
     ),
   ).toMatchInlineSnapshot(`
     {
-      "code": "console.log('1f7yvv91-test');
-    console.log('1f7yvv92-test');",
+      "code": "console.log('s1f7yvv91-test');
+    console.log('s1f7yvv92-test');",
       "map": SourceMap {
         "file": undefined,
-        "mappings": "AAAA,YAAY,eAAgB;AAC5B,YAAY,eAAgB",
+        "mappings": "AAAA,YAAY,gBAAgB;AAC5B,YAAY,gBAAgB",
         "names": [],
         "sources": [
           "",
