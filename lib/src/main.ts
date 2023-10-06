@@ -2,7 +2,7 @@ import { Plugin } from 'vite'
 import { murmur2 } from './hash'
 import MagicString from 'magic-string'
 
-export function stableId(): Plugin {
+export function ViteStableId(): Plugin {
   let isDev = false
 
   const virtualModuleId = 'virtual:stable-id'
