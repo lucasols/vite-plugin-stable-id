@@ -53,7 +53,7 @@ export function replaceStableIdCalls(
 
     occurrences++
 
-    return `'${moduleStableId}${occurrences}${m ? `-${m}` : ''}'`
+    return `'si${moduleStableId}${occurrences}${m ? `-${m}` : ''}'`
   })
 
   const newCode = s.toString()
