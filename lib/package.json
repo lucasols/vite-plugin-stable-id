@@ -16,7 +16,7 @@
   },
   "files": [
     "dist",
-    "virtualTypes.d.ts"
+    "*.d.ts"
   ],
   "repository": "github:lucasols/vite-plugin-stable-id",
   "author": "Lucas Santos",
@@ -27,10 +27,11 @@
   "exports": {
     ".": {
       "import": "./dist/main.js",
-      "require": "./dist/main.cjs"
+      "require": "./dist/main.cjs",
+      "types": "./dist/main.d.ts"
     },
     "./virtualTypes": {
-      "types": "./virtualTypes.d.ts"
+      "types": "./virtual-types.d.ts"
     }
   },
   "sideEffects": false,
