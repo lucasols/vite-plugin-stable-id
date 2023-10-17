@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-stable-id",
   "description": "Generate stable IDs based on file path and code line at build time for Vite apps.",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "license": "MIT",
   "scripts": {
     "test": "vitest --ui",
