@@ -49,9 +49,9 @@ export function replaceStableIdCalls(
   let occurrences = 0
 
   s.replace(stableIdRegex, (_, m) => {
-    if (!isDev) return `'${moduleStableId}'`
-
     occurrences++
+
+    if (!isDev) return `'${moduleStableId}${occurrences}'`
 
     return `'s${moduleStableId}${occurrences}${m ? `-${m}` : ''}'`
   })
