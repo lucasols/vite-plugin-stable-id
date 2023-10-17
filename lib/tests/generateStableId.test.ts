@@ -147,10 +147,10 @@ test('should not add labels in production', () => {
     ),
   ).toMatchInlineSnapshot(`
     {
-      "code": "console.log('1f7yvv9');",
+      "code": "console.log('1f7yvv91');",
       "map": SourceMap {
         "file": undefined,
-        "mappings": "AAAA,YAAY,SAAgB",
+        "mappings": "AAAA,YAAY,UAAgB",
         "names": [],
         "sources": [
           "",
