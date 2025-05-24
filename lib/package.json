@@ -30,7 +30,7 @@
       "require": "./dist/main.cjs",
       "types": "./dist/main.d.ts"
     },
-    "./virtualTypes": {
+    "./virtual-types": {
       "types": "./virtual-types.d.ts"
     },
     "./*": "./*"
